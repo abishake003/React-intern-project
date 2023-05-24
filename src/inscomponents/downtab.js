@@ -3,7 +3,7 @@ import React from "react";
 function Table(){
     return(
         <div class="container">
-
+           
 <table class="customtable">
         <thead>
             <tr>
@@ -94,7 +94,7 @@ function Table(){
             </tr>
         </tbody>
     </table><br></br>
-    <center><button class="submit-button rounded">Submit</button></center>
+    <center><button type="submit" class="submit-button rounded">Submit</button></center>
 
 </div>
 );

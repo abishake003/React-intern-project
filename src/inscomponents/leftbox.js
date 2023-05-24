@@ -1,6 +1,12 @@
 import React from "react";
 import './cssfile.css'
+import DateComponent from "./datecomp";
+import ButtonValidation from "./addbtn";
+import DataDisplay from "./addbtn";
+
+
 function Leftcolumn(){
+
     return(
         <div class="container">
         <div class="card">
@@ -10,7 +16,7 @@ function Leftcolumn(){
 
                         <div class="col">
                         <label for="exampleInputEmail1">Date</label>
-                        <input type="date" class="form-control"required id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="dd:mm:yyyy"/>
+                        <DateComponent/>
                         </div>
 
                         <div class="col">
@@ -21,7 +27,7 @@ function Leftcolumn(){
                         <div class="col">
                         <label class="form-input-label" for="exampleCheck1">Machine Operator</label><br></br>
                         <select name="operator" id="shift form-control" required>
-                        <option value="morning">operator 1</option>
+                        <option value="morning">           operator 1                </option>
                         <option value="evening">operator 2</option>
                         <option value="night">operator 3</option>
                         </select>
@@ -77,7 +83,7 @@ function Leftcolumn(){
                         </div>
 
                         <div class="col">
-                        <label for="exampleInputPassword1"> End time</label>
+                        <label for="exampleInputPassword1">Tool Setting End time</label>
                         <input type="time" class="form-control" id="exampleInputPassword1" placeholder="00:00"/>
                         </div>
 
@@ -86,8 +92,9 @@ function Leftcolumn(){
                     
 
                         <center>
-                            <button type="submit" class="btn btn-primary btn-sm customcol ">ADD</button>
-                            <button type="clear"class="btn btn-primary btn-sm customcol">clear</button>
+                            <DataDisplay/>
+                            <button type="submit" className="btn btn-primary btn-sm btn-block" style={{ width: '80px' }}>CLEAR</button>
+
                         </center>
     
 
