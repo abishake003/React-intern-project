@@ -1,5 +1,5 @@
-import Leftbox from  './inscomponents/leftbox'
-import Table from './inscomponents/downtab'
+import Leftbox from  './components3/leftbox'
+import Table from './components3/downtab'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App(){
